@@ -923,7 +923,6 @@ Buffer.prototype.write = function write (string, offset, length, encoding) {
 
       case 'base64url':
       case 'base64':
-        // console.log(encoding, '::', string)
         // Warning: maxLength not taken into account in base64Write
         return base64Write(this, string, offset, length, encoding)
 
