@@ -1960,6 +1960,7 @@ function base64urlFromBase64 (str) {
   return str
     .replaceAll(BASE64_CHAR_62, BASE64URL_CHAR_62)
     .replaceAll(BASE64_CHAR_63, BASE64URL_CHAR_63)
+    .replaceAll('=', '')
 }
 
 function base64clean (str) {
